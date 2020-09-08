@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+
+<input type="text" id="valor">
+
+<br>
+<textarea id="valores" rows="10" cols="6"></textarea>
+
+<hr>
+
+<script>
+// if = comparação
+// ele permite compara valores e realizar oparações
+// ele permite condicionar as coisas
+// vejamos um exemplo
+var a=2;
+var b=2;
+if(a>b){
+	console.log("A é maior");	
+}
+if(b>a){
+	console.log("B é maior");
+}
+if(a==b){
+	console.log("são iguais valores");
+}
+
+// for = repetição  --- ; ---; ---
+// ele tem inicio, neste caso inicia em 0
+// ele tem um fim que é <5, até 4.
+// ele tem intervalo que é de 1 em 1 i++
+for(let i=0;i<5;i++){
+	console.log("Oi "+i);
+	//alert("Oi "+i);
+}
+
+
+// Mais um exemplo de if, agora vamos comparar o valor e o tipo.
+// Vamos usar o sinal de ===
+var a2="2";
+var b2="2";
+if(a2>b2){
+	console.log("A é maior");	
+}
+if(b2>a2){
+	console.log("B é maior");
+}
+if(a2===b2){
+	console.log("são iguais valores e tipo");	
+}
+
+// for = repetição  --- ; ---; ---
+// ele tem inicio, neste caso inicia em 0
+// ele tem um fim que é <5, até 4.
+// ele tem intervalo que é de 1 em 1 i++
+for(let i=0;i<5;i++){
+	console.log("Oi "+i);
+	//alert("Oi "+i);
+}
+
+// Exemplo de tabuada do 7
+console.log("Tabuada");
+var total=0;
+for(let i=1;i<=10;i++){
+	console.log(i+ " * 7="+(i*7));
+	document.write(i+ " * 7="+(i*7));
+	total+=(i*7);
+	document.write("<br>");
+	var temp=document.getElementById("valores").value+total+"\n";
+	document.getElementById("valores").value=temp;	
+}
+document.getElementById("valor").value=total;	
+// for = repetição  --- ; ---; ---
+// ele tem inicio, neste caso inicia em 5
+// ele tem um fim que é <50, até 45.
+// ele tem intervalo que é de 5 em 5 i+=5
+for(let i=5;i<50;i+=5){
+	console.log(i);
+}
+
+</script>
+
+</body>
+</html>
